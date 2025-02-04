@@ -192,6 +192,8 @@
             board[row][col] = currentPlayer;
             flipPieces(row, col, currentPlayer);
 
+	   renderBoard();
+
             currentPlayer = currentPlayer === 'black' ? 'white' : 'black';
 
             if (!getValidMoves(currentPlayer).length) {
